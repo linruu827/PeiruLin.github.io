@@ -347,7 +347,6 @@ header ul li:not(:last-child) {
 }
 
 #Portfolio {
-  height: 100%;
   background-color: #abb3a7;
   display: flex;
   justify-content: center;
@@ -378,9 +377,6 @@ header ul li:not(:last-child) {
 .item-name {
   font-size: 1.5rem;
   font-weight: bold;
-}
-.item-img {
-  /* object-fit: cover; */
 }
 
 footer {
