@@ -77,7 +77,7 @@ header ul li:not(:last-child) {
 
 #Banner {
   background-color: #abb3a7;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,6 +409,10 @@ footer p {
   text-align: center;
 }
 
+.email p {
+  margin: 0;
+}
+
 #backToTop {
   position: fixed;
   border: 0;
@@ -416,6 +420,8 @@ footer p {
   right: 30px;
   font-size: 3rem;
   cursor: pointer;
+  text-decoration: none;
+  display: none;
 }
 
 /* 平板 */
@@ -480,11 +486,59 @@ footer p {
   }
 
   .item-img {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
 /* 手機 */
 @media screen and (max-width: 414px) {
-  
+  /* Banner */
+
+  .about-me {
+    max-width: 100%;
+  }
+
+  .about-me img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .list-item {
+    width: 90px;
+    height: 90px;
+    font-size: 1rem;
+  }
+
+  .list-item:hover {
+    font-size: 1rem;
+  }
+
+  /* Portfolio */
+
+  #Portfolio {
+    padding-top: 0;
+  }
+
+  #Portfolio .container {
+    margin: 0;
+  }
+  .item {
+    max-width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-right: 0;
+  }
+  .item-img {
+    max-width: 80%;
+  }
+  /* footer */
+  footer .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
 }
