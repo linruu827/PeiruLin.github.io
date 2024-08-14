@@ -103,11 +103,13 @@ header ul li:not(:last-child) {
 .intro {
   padding: 50px 25px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .intro h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .intro h5 {
@@ -126,7 +128,7 @@ header ul li:not(:last-child) {
 
 .link-list {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-around;
   padding: 0 2rem;
 }
 
@@ -358,14 +360,14 @@ header ul li:not(:last-child) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #Portfolio ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .item {
@@ -382,6 +384,10 @@ header ul li:not(:last-child) {
 .item-name {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.item-img img {
+  border-radius: 20px;
 }
 
 footer {
