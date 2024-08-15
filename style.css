@@ -424,9 +424,16 @@ footer p {
   display: none;
 }
 
+
 /* 平板 */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 768px) {
   /* Banner */
+
+  #Banner {
+    max-width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+  }
   .about-me {
     flex-wrap: wrap;
     display: flex;
@@ -452,6 +459,7 @@ footer p {
   /* Resume */
   #Resume {
     height: 100%;
+    max-width: 100%;
     padding-top: 2rem;
   }
 
@@ -467,11 +475,13 @@ footer p {
   .work-content {
     text-wrap: wrap;
   }
+  
 
   /* Portfolio */
 
   #Portfolio {
     padding-top: 2rem;
+    max-width: 100%;
   }
 
   #Portfolio ul li {
@@ -492,7 +502,15 @@ footer p {
 
 /* 手機 */
 @media screen and (max-width: 414px) {
+  /* header */
+  header {
+    max-width: 100%;
+  }
   /* Banner */
+
+  #Banner {
+    max-width: 100%;
+  }
 
   .about-me {
     max-width: 100%;
@@ -517,10 +535,50 @@ footer p {
     font-size: 1rem;
   }
 
+  /* Resume */
+
+  #Resume {
+    max-width: 100%;
+  }
+
+  #Resume .container {
+    max-width: 100%;
+  }
+
+  .work-experience {
+    max-width: fit-content;
+  }
+
+  .work-experience span {
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+
+  .work-content {
+    padding: 0;
+  }
+
+  .work-experience ul li {
+    flex-direction: column;
+  }
+  .skills ul li {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .skills ul li p {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .progress-bar span {
+    font-size: 0.9rem;
+  }
   /* Portfolio */
 
   #Portfolio {
-    padding-top: 0;
+    max-width: 100%;
   }
 
   #Portfolio .container {
@@ -536,6 +594,11 @@ footer p {
     max-width: 80%;
   }
   /* footer */
+
+  footer {
+    max-width: 100%;
+  }
+
   footer .container {
     flex-direction: column;
     gap: 1rem;
