@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #d9d4cf;
+  --primary-deep: #7c7877;
+  --primary-light: #f0e5de;
+  --secondary: #abd0ce;
+  --secondary-deep: #85a1a0;
+  --secondary-light: #d2ebe9;
+  --gray: #969696;
+  --gray-deep: #5c5c5c;
+  --gray-light: #dcdcdc;
+  --black: #000;
+  --white: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  padding: 1rem 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  color: var(--secondary-deep);
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .container {
+  font-size: 1.25rem;
+  color: var(--primary-deep);
+}
+
+header img {
+  display: flex;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 250px;
+}
+
+.search input {
+  border: none;
+}
+
+.menu {
+  display: flex;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--primary-deep);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--primary);
+}
+
+.account {
+  width: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+aside {
+  width: 20%;
+}
+
+aside a {
+  text-decoration: none;
+  color: var(--primary-deep);
+}
+
+aside a:hover {
+  color: var(--primary);
+}
+
+.aside li {
+  margin-bottom: 10px;
+}
+
+section {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.item-list {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--primary-deep);
+}
+
+.pic {
+  overflow: hidden;
+  height: 600px;
+  width: 400px;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+}
+
+.pic img:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.product-name {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
